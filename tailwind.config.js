@@ -3,8 +3,10 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     extend: {
-      color:{
-       "bg-button": "#00112e"
+      colors:{
+       "bg-button": "#00112e",
+       "peach": "#f0b27a",
+       "gray-color": "#475467"
       },
       spacing:{
         "big":"48rem"
@@ -17,9 +19,11 @@ module.exports = {
       xl:"1280px",
     },
     fontFamily:{
-      nunito:['Nunito', 'sans-serif']
+      plus:["Plus Jakarta Sans", 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 }
 
