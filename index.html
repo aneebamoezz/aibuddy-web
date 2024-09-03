@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="font-plus">
@@ -532,13 +533,14 @@
                     <div class="col-span-6 bg-white p-8 rounded-lg">
                         <div class="grid grid-col gap-2 mb-6">
                             <h3 class="font-medium text-lg pb-5">Starter plan</h3>
-                                <small><span class="text-5xl font-bold">$9</span class="text-gray-color">/month</small>
-                                <small class="text-gray-color">Billed anually</small>
+                            <small><span class="text-5xl font-bold">$9</span class="text-gray-color">/month</small>
+                            <small class="text-gray-color">Billed anually</small>
                             <div class="bg-bg-button items-center text-center rounded-full">
                                 <button class="text-white text-sm font-semibold p-3">Choose Starter plan</button>
                             </div>
                             <div class="border items-center text-center rounded-full hover:bg-light-pink">
-                                <button class="text-bg-button text-sm font-semibold p-3 hover:bg-light-pink">Contact Us</button>
+                                <button class="text-bg-button text-sm font-semibold p-3 hover:bg-light-pink">Contact
+                                    Us</button>
                             </div>
                         </div>
                         <div class="grid lg:grid-col">
@@ -571,13 +573,14 @@
                     <div class="col-span-4 bg-white p-8 rounded-lg">
                         <div class="grid grid-col gap-2 mb-6">
                             <h3 class="font-medium text-lg pb-5">Ultimate plan</h3>
-                                <small><span class="text-5xl font-bold">$39</span class="text-gray-color">/month</small>
-                                <small class="text-gray-color">Billed anually</small>
+                            <small><span class="text-5xl font-bold">$39</span class="text-gray-color">/month</small>
+                            <small class="text-gray-color">Billed anually</small>
                             <div class="bg-bg-button items-center text-center rounded-full">
                                 <button class="text-white text-sm font-semibold p-3">Get one month free</button>
                             </div>
                             <div class="border items-center text-center rounded-full hover:bg-light-pink">
-                                <button class="text-bg-button text-sm font-semibold p-3 hover:bg-light-pink">Contact Us</button>
+                                <button class="text-bg-button text-sm font-semibold p-3 hover:bg-light-pink">Contact
+                                    Us</button>
                             </div>
                         </div>
                         <div class="grid lg:grid-col">
@@ -611,10 +614,70 @@
             </div>
         </section>
 
-        <section>
-            
+        <section class="mt-20 py-10">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-10 gap-8">
+                    <div class="col-span-4 bg-white p-8">
+                        <div class="">
+                            <small class="font-medium text-xs bg-orangge p-1 text-white rounded-full">FAQs</small>
+                            <h2 class="font-bold text-4xl pb-6">Frequently asked questions</h2>
+                            <p class="text-gray-color text-lg">Have questions? We have answers. Check out our FAQ
+                                section for quick insights into AIBuddy's features, functionality, and how it can
+                                revolutionize your conversational experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-6 bg-white">
+                        <div x-data="{ open: false }">
+                            <div class="border-b bg-red-300">
+                                <div class="flex justify-around items-center my-10">
+                            <button @click="open = ! open" class="font-bold">How can I customize AIBuddy to match my brand's tone and voice?</button>
+                            <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
+                        </div> 
+                        <div x-data="{ open: false }">
+                            <div class="border-b bg-red-300">
+                                <div class="flex justify-around items-center my-10">
+                            <button @click="open = ! open" class="font-bold">Is AIBuddy compatible with popular website platforms like Webflow?</button>
+                            <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
+                        </div> 
+                        <div x-data="{ open: false }">
+                            <div class="border-b bg-red-300">
+                                <div class="flex justify-around items-center my-10">
+                            <button @click="open = ! open" class="font-bold">What analytics does AIBuddy provide for tracking performance and user engagement?</button>
+                            <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
+                        </div> 
+                        <div x-data="{ open: false }">
+                            <div class="border-b bg-red-300">
+                                <div class="flex justify-b items-center my-10">
+                            <button @click="open = ! open" class="font-bold">How does AIBuddy handle complex queries and maintain context in conversations?</button>
+                            <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </section>
+
+
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
+
+<!-- <div x-data="{ open: false }">
+    <button @click="open = ! open" class="font-bold">How can I customize AIBuddy to match my brand's tone and voice?</button>
+
+    <div x-show="open" @click.outside="open = false">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
+</div> -->
