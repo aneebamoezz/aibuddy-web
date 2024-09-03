@@ -18,9 +18,12 @@ module.exports = {
        "gray-color": "#475467",
        "skyblue": "#f2f4f7",
        "orangge": "#e67e22",
+       "light-pink": "#fae5d3",
+       "card-bg": "#001c4d",
       },
       spacing:{
-        "big":"48rem"
+        "big":"48rem",
+        "line-height": "1.5",
       }
     },
     screens:{
