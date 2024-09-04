@@ -50,7 +50,7 @@
                         <div class="flex flex-shrink-0 items-center">
                             <img class="h-8 w-auto" src="images/Logo-AiBuddy.svg" alt="Your Company">
                         </div>
-                        <div class="hidden sm:ml-6 sm:block">
+                        <div class="hidden md:hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <a href="#"
@@ -71,7 +71,7 @@
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button type="button"
-                            class="relative px-4 py-2 rounded-full bg-bg-button p-1 text-white font-medium
+                            class="sm:hidden relative px-4 py-2 rounded-full bg-bg-button p-1 text-white font-medium
                      hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             Try Aibuddy
                         </button>
@@ -86,25 +86,28 @@
             <div class="space-y-1 px-2 pb-3 pt-2">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Dashboard</a>
+                    aria-current="page">Product</a>
                 <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
                 <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">FAQ</a>
                 <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pricing</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="pt-32 -mt-24 max-h-full h-full">
+        <!--Hero Section-->
+        <section class="pt-32 -mt-24 max-h-full h-full p-5">
             <div class="container-lg mx-auto">
                 <div class="relative overflow-hidden">
                     <img src="images/Background-dots.webp" class="absolute" alt="">
                     <div class="mx-auto max-w-6xl sm:px-6 lg:px-8">
-                        <div class="grid lg:grid-cols-10 items-center">
-                            <div class="max-w-2xl lg:col-span-6">
+                        <div class="grid lg:grid-cols-10 md:grid-cols-1 md:gap-12 items-center">
+                            <div class="max-w-2xl lg:col-span-6 md:col-span-12">
                                 <div class="flex flex-col items-start max-w-xl">
                                     <h1 class="text-5xl leading-snug font-bold mb-6">Your new powerful
                                         <span class="text-peach">smart conversational</span>
@@ -144,7 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="lg:col-span-4">
+                            <div class="lg:col-span-4  md:col-span-4">
                                 <img src="images/hero-aibuddy-template.webp"
                                     class="object-cover aspect-[2/3] h-full w-full rounded-bl-2xl rounded-tr-2xl"
                                     alt="">
@@ -155,7 +158,9 @@
             </div>
         </section>
 
-        <section class="mt-20 p-3">
+        <!--Logo Section-->
+
+        <section class="mt-20 p-5">
             <div class="container mx-auto">
                 <div class="flex overflow-hidden space-x-16">
                     <div class="flex space-x-16 animate-loop-scroll">
@@ -181,7 +186,9 @@
                 </div>
         </section>
 
-        <section class="mt-20 bg-skyblue">
+        <!--Empowering conversations with AiBuddy-->
+
+        <section class="mt-20 bg-skyblue p-5">
             <div class="container mx-auto">
                 <div class="text-center">
                     <button
@@ -190,9 +197,9 @@
                     <p class="text-xl mb-8 max-w-4xl mx-auto text-gray-color">With these features, AIBuddy showcases its
                         prowess in delivering intelligent, context-aware conversations that enhance customer experiences
                         and boost engagement.</p>
-                    <div class="mt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8 max-w-6xl mx-auto
+                    <div class="mt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-1 md:m-4 sm:grid-cols-2 gap-8 max-w-6xl mx-auto
                         ">
-                        <div class="text-left bg-white rounded-md p-4">
+                        <div class="text-left bg-white rounded-md py-4 px-3">
                             <img src="images/661d33c79fc167049ba9ecb6_chat-icon.svg" class="bg-bg-button p-4 rounded-md"
                                 alt="">
                             <div class="py-5 flex flex-col items-start">
@@ -226,18 +233,18 @@
                 </div>
             </div>
         </section>
-
-        <section class="mt-20">
-            <div class="container mx-auto">
-                <div class="flex flex-row items-center justify-between mb-24">
-                    <div>
+        <!--AI Chatbot solution: driving success-->
+        <section class="mt-20 p-5">
+            <div class="container mx-auto md:p-6">
+                <div class="flex flex-row sm:flex sm:flex-col items-center justify-between mb-24">
+                    <div class="">
                         <h3 class="font-bold text-3xl pb-3">AI Chatbot solution: driving success</h3>
                         <p class="text-xl text-gray-color">Join the revolution with our
                             cutting-edge AI-powered chatbot solution.</p>
-                    </div>
-                    <div>
-                        <button class="bg-bg-button text-white text-xs border rounded-full py-3 px-5">Try Aibuddy for
-                            free</button>
+                        <div>
+                            <button class="bg-bg-button sm:w-full text-white text-xs border rounded-full py-3 px-5">Try Aibuddy for
+                                free</button>
+                        </div>
                     </div>
                 </div>
                 <div class="mt-12 pb-20 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-8 max-w-7xl mx-auto
@@ -275,12 +282,12 @@
                 </div>
             </div>
         </section>
-
-        <section class="bg-skyblue overflow-hidden">
-            <div class="container mx-auto">
+        <!--Trusted by customers-->
+        <section class="bg-skyblue overflow-hidden p-5">
+            <div class="container mx-auto md:p-6">
                 <div class="grid lg:grid-cols-10 gap-4">
                     <div class="lg:col-span-5">
-                        <div class="flex flex-col my-60">
+                        <div class="flex flex-col my-40">
                             <h3 class="font-bold text-4xl mb-4 w-3/4">Trusted by <span class="text-orangge">satisfied
                                     customers</span></h3>
                             <p class="text-xl mb-8 max-w-4xl mx-auto text-gray-color">Discover the authentic experiences
@@ -465,9 +472,9 @@
                 </div>
             </div>
         </section>
-
+        <!--Ready to ransform the-->
         <section class="mt-20">
-            <div class="container mx-auto overflow-hidden">
+            <div class="container mx-auto md:p-6 overflow-hidden p-5">
                 <div class="grid lg:grid-cols-2 gap-8">
                     <div class="flex flex-col items-start justify-center">
                         <h3 class="font-bold text-4xl max-w-5xl mb-5">Ready to <span class="text-orangge">transform the
@@ -499,9 +506,9 @@
                 </div>
             </div>
         </section>
-
-        <section class="mt-20">
-            <div class="container mx-auto overflow-hidden">
+        <!--Unleash the power-->
+        <section class="mt-20 p-5">
+            <div class="container mx-auto overflow-hidden md:p-6">
                 <div class="grid lg:grid-cols-2 gap-8">
                     <div class="bg-light-pink rounded-xl -ml-80 p-10">
                         <img src="images/662b95bed21b9cddfa44e967_mocku-p-2000 (1).webp" class="" alt="">
@@ -519,8 +526,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="mt-20 py-10 bg-skyblue">
+        <!--Pricing plans that scale-->
+        <section class="mt-20 py-10 bg-skyblue p-5">
             <div class="container mx-auto">
                 <div class="text-center">
                     <button class="bg-orangge text-white text-sm font-medium mt-20 mb-3 py-1 px-2 rounded-full">Our
@@ -529,8 +536,8 @@
                     <p class="text-xl mb-8 max-w-4xl mx-auto text-gray-color">Simple, transparent pricing that grows
                         with you. Try any plan free for 30 days.</p>
                 </div>
-                <div class="grid lg:grid-cols-10 gap-8">
-                    <div class="col-span-6 bg-white p-8 rounded-lg">
+                <div class="grid lg:grid-cols-10 md:gap-0 gap-8">
+                    <div class="col-span-6 bg-white p-8 rounded-lg md:m-6">
                         <div class="grid grid-col gap-2 mb-6">
                             <h3 class="font-medium text-lg pb-5">Starter plan</h3>
                             <small><span class="text-5xl font-bold">$9</span class="text-gray-color">/month</small>
@@ -570,7 +577,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-4 bg-white p-8 rounded-lg">
+                    <div class="col-span-4 md:col-span-6 bg-white p-8 rounded-lg md:m-6">
                         <div class="grid grid-col gap-2 mb-6">
                             <h3 class="font-medium text-lg pb-5">Ultimate plan</h3>
                             <small><span class="text-5xl font-bold">$39</span class="text-gray-color">/month</small>
@@ -613,23 +620,23 @@
                 </div>
             </div>
         </section>
-
+        <!--Frequently asked questions-->
         <section class="mt-20 py-10">
             <div class="container mx-auto">
                 <div class="grid lg:grid-cols-10 gap-8">
                     <div class="col-span-4 bg-white p-8">
                         <div class="">
                             <small class="font-medium text-xs bg-orangge p-1 text-white rounded-full">FAQs</small>
-                            <h2 class="font-bold text-4xl pb-6">Frequently asked questions</h2>
+                            <h2 class="font-bold text-4xl pb-6 mt-2">Frequently asked questions</h2>
                             <p class="text-gray-color text-lg">Have questions? We have answers. Check out our FAQ
                                 section for quick insights into AIBuddy's features, functionality, and how it can
                                 revolutionize your conversational experiences.</p>
                         </div>
                     </div>
-                    <div class="col-span-6 bg-white">
+                    <div class="col-span-6 md:m-6">
                         <div x-data="{ open: false }">
-                            <div class="border-b bg-red-300">
-                                <div class="flex justify-around items-center my-10">
+                            <div class="border-b">
+                                <div class="flex justify-between my-10">
                             <button @click="open = ! open" class="font-bold">How can I customize AIBuddy to match my brand's tone and voice?</button>
                             <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
                                 </div>
@@ -637,8 +644,8 @@
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
                         </div> 
                         <div x-data="{ open: false }">
-                            <div class="border-b bg-red-300">
-                                <div class="flex justify-around items-center my-10">
+                            <div class="border-b">
+                                <div class="flex justify-between my-10">
                             <button @click="open = ! open" class="font-bold">Is AIBuddy compatible with popular website platforms like Webflow?</button>
                             <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
                                 </div>
@@ -646,8 +653,8 @@
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
                         </div> 
                         <div x-data="{ open: false }">
-                            <div class="border-b bg-red-300">
-                                <div class="flex justify-around items-center my-10">
+                            <div class="border-b">
+                                <div class="flex justify-between my-10">
                             <button @click="open = ! open" class="font-bold">What analytics does AIBuddy provide for tracking performance and user engagement?</button>
                             <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
                                 </div>
@@ -655,8 +662,8 @@
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
                         </div> 
                         <div x-data="{ open: false }">
-                            <div class="border-b bg-red-300">
-                                <div class="flex justify-b items-center my-10">
+                            <div class="border-b">
+                                <div class="flex justify-between my-10">
                             <button @click="open = ! open" class="font-bold">How does AIBuddy handle complex queries and maintain context in conversations?</button>
                             <ion-icon name="add-circle-outline"  @click="open = ! open" class="cursor-pointer text-3xl"></ion-icon>
                                 </div>
@@ -667,17 +674,87 @@
                 </div>
             </div>
         </section>
-
-
+        <!--contact form-->
+        <section class="mt-20 py-20 bg-skyblue p-5">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h1 class="font-bold text-4xl mb-2">No long-term contracts. No catches. Simple.</h1>
+                    <p class="text-xl mb-8 max-w-4xl mx-auto text-gray-color">Start your 30-day free trial now. You can cancel anytime.</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white mt-10 p-10 rounded-xl">
+                    <form>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-1">
+                                <label for="" class="font-semibold text-sm text-gray-color">First Name*</label>
+                            <input type="text" placeholder="Aneeba" class="border rounded-full p-3">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label for="" class="font-semibold text-sm text-gray-color">Last Name*</label>
+                            <input type="text" placeholder="Fatima" class="border rounded-full p-3">
+                            </div>
+                            <div class="col-span-2 flex flex-col gap-1">
+                                <label for="" class="font-semibold text-sm text-gray-color">Email*</label>
+                                <input type="email" placeholder="example@email.com" class="border rounded-full p-3">
+                            </div>
+                            <div class="col-span-2 flex flex-col gap-1">
+                                <label for="" class="font-semibold text-sm text-gray-color">Phone number</label>
+                                <input type="tel" placeholder="(123) 456 789" class="border rounded-full p-3">
+                            </div>
+                           
+                        </div>
+                        <div class="mt-8">
+                            <button class="w-full bg-bg-button text-white text-center rounded-full p-3 font-semibold text-sm">Get my free trial</button>
+                        </div>
+                        <div class="mt-4">
+                            <p class="max-w-sm text-center">We will send you a link to try our product during one month.
+                                Then you will be able to upgrade or stay free (forever).</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <!-- <footer class="my-5">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-12 md:grid-cols-1 md:gap-0 gap-16 border-b md:p-6">
+                    <div class="col-span-4 py-8">
+                        <img src="images/Logo-AiBuddy.svg" class="mb-5" alt="">
+                        <p class="leading-normal">Empowering conversations, <br>Elevating experiences.</p>
+                    </div>
+                    <div class="col-span-8 my-auto">
+                        <nav class="items-center">
+                            <ul class="flex justify-end md:justify-start gap-4 py-8 font-semibold">
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Licenses</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid grid-cols-12 gap-16 md:text-sm md:p-6">
+                        <div class="col-span-8 py-8">
+                            <p class="leading-normal">Copyright © AIBuddy | Developed by <span class="text-orangge underline">Alexis Gardin</span> | Powered by <span class="text-orangge underline">Webflow</span></p>
+                        </div>
+                        <div class="col-span-4 my-auto">
+                            <div class="flex gap-4 justify-end">
+                                <img src="images/661d33c74c5f947323780cb2_twitter-icon.svg" alt="">
+                                <img src="images/661d33c7014c1488279319eb_facebook-icon.svg" alt="">
+                                <img src="images/661d33c7babb916786603a6a_linkedin-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
-
-<!-- <div x-data="{ open: false }">
-    <button @click="open = ! open" class="font-bold">How can I customize AIBuddy to match my brand's tone and voice?</button>
-
-    <div x-show="open" @click.outside="open = false">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
-</div> -->

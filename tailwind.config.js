@@ -29,7 +29,7 @@ module.exports = {
     screens:{
       sm:"480px",
       md:"768px",
-      lg:"940px",
+      lg:"1040px",
       xl:"1280px",
     },
     fontFamily:{
