@@ -16,9 +16,9 @@
 
 <body class="font-plus">
    <!-- Navbar -->
-   <nav class="relative container-lg bg-red-400">
+   <nav class="relative container-lg mx-auto max-w-7xl">
     <!-- Flex container -->
-    <div class="flex md:items-center items-start p-4 md:justify-around md:py-6 max-w-7xl">
+    <div class="flex md:items-center items-center justify-between p-4 md:justify-around md:py-6">
         <!-- Logo -->
         <div class="pt-2">
             <img src="images/Logo-AiBuddy.svg" alt="" />
@@ -33,25 +33,19 @@
         </div>
         <!-- Mobile Menu -->
         <div x-data="{open: false}">
-            <!-- <template x-if="open" class="md:hidden">
-                <div
-                    class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
-                    <img class="fixed object-cover" src="images/bg-modal.jpeg" alt="">
-                </div>
-            </template> -->
             <button x-on:click="open = !open" class="block hamburger md:hidden focus:outline-none">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
             </button>
-            <div x-show="open" x-transition>
+            <div x-show="open">
                 <div
-                    class="fixed flex flex-col rounded-lg items-center text-black self-end py-8 mt-4 space-y-6 font-bold bg-bg-button sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">Pricing</a>
-                    <a href="#">Product</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Community</a>
+                    class="fixed flex flex-col rounded-lg bg-bg-button items-center text-white self-end py-8 mt-4 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" x-transition>
+                    <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Testimonials</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Contact us</a>
                 </div>
             </div>
         </div>
@@ -472,7 +466,7 @@
         <section class="mt-20 p-5">
             <div class="container mx-auto overflow-hidden md:p-6">
                 <div class="grid lg:grid-cols-2 gap-8">
-                   
+
                     <div class="row-start-2 lg:row-start-1 bg-light-pink rounded-xl -ml-80 p-10">
                         <img src="images/662b95bed21b9cddfa44e967_mocku-p-2000 (1).webp" class="" alt="">
                     </div>
@@ -603,7 +597,7 @@
                                 </div>
                             </div>
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
-                        </div> 
+                        </div>
                         <div x-data="{ open: false }">
                             <div class="border-b">
                                 <div class="flex justify-between my-10">
@@ -612,7 +606,7 @@
                                 </div>
                             </div>
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
-                        </div> 
+                        </div>
                         <div x-data="{ open: false }">
                             <div class="border-b">
                                 <div class="flex justify-between my-10">
@@ -621,7 +615,7 @@
                                 </div>
                             </div>
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
-                        </div> 
+                        </div>
                         <div x-data="{ open: false }">
                             <div class="border-b">
                                 <div class="flex justify-between my-10">
@@ -630,7 +624,7 @@
                                 </div>
                             </div>
                             <div x-show="open" @click.outside="open = false" class=" p-8">Customizing AIBuddy to align with your brand's tone and voice is incredibly straightforward. Within the AIBuddy dashboard, you'll find an intuitive customization panel that allows you to adjust the chatbot's responses, greetings, and interactions.</div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -663,7 +657,7 @@
                                 <label for="" class="font-semibold text-sm text-gray-color">Phone number</label>
                                 <input type="tel" placeholder="(123) 456 789" class="border rounded-full p-3">
                             </div>
-                           
+
                         </div>
                         <div class="mt-8">
                             <button class="w-full bg-bg-button text-white text-center rounded-full p-3 font-semibold text-sm">Get my free trial</button>
