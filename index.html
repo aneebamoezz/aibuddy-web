@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div
-                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        class="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button type="button"
                             class="relative px-4 py-2 rounded-full bg-bg-button p-1 text-white font-medium
                      hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -106,7 +106,7 @@
                 <div class="relative overflow-hidden">
                     <img src="images/Background-dots.webp" class="absolute" alt="">
                     <div class="mx-auto max-w-6xl sm:px-6 lg:px-8">
-                        <div class="grid lg:grid-cols-10 md:grid-cols-1 items-center">
+                        <div class="grid lg:grid-cols-10 md:grid-cols-1 gap-4 items-center">
                             <div class="max-w-2xl lg:col-span-6 md:col-span-12">
                                 <div class="flex flex-col items-start max-w-xl">
                                     <h1 class="text-5xl leading-snug font-bold mb-6">Your new powerful
@@ -147,7 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="lg:col-span-4  md:col-span-4">
+                            <div class="lg:col-span-4 md:col-span-4 md:mt-4">
                                 <img src="images/hero-aibuddy-template.webp"
                                     class="object-cover aspect-[2/3] h-full w-full rounded-bl-2xl rounded-tr-2xl"
                                     alt="">
@@ -192,8 +192,8 @@
                 <div class="text-center">
                     <button
                         class="bg-orangge text-white text-sm font-medium mt-20 mb-3 py-1 px-2 rounded-full">Features</button>
-                    <h1 class="font-bold text-4xl mb-5">Empowering conversations with AiBuddy</h1>
-                    <p class="text-xl mb-8 max-w-4xl mx-auto text-gray-color sm:text-base">With these features, AIBuddy showcases its
+                    <h1 class="font-bold md:text-4xl text-3xl mb-5">Empowering conversations with AiBuddy</h1>
+                    <p class="text-base mb-8 max-w-4xl mx-auto text-gray-color sm:text-xl">With these features, AIBuddy showcases its
                         prowess in delivering intelligent, context-aware conversations that enhance customer experiences
                         and boost engagement.</p>
                     <div class="mt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-1 md:m-4 sm:grid-cols-2 gap-8 max-w-6xl mx-auto
@@ -509,7 +509,8 @@
         <section class="mt-20 p-5">
             <div class="container mx-auto overflow-hidden md:p-6">
                 <div class="grid lg:grid-cols-2 gap-8">
-                    <div class="bg-light-pink rounded-xl -ml-80 p-10">
+                   
+                    <div class="row-start-2 lg:row-start-1 bg-light-pink rounded-xl -ml-80 p-10">
                         <img src="images/662b95bed21b9cddfa44e967_mocku-p-2000 (1).webp" class="" alt="">
                     </div>
                     <div class="flex flex-col items-start justify-center">
@@ -713,40 +714,36 @@
             </div>
         </section>
         <!--footer-->
-        <!-- <footer class="my-5">
-            <div class="container mx-auto">
-                <div class="grid lg:grid-cols-12 gap-16 border-b md:p-6">
-                    <div class="lg:col-span-4 py-8">
+        <footer class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col gap-8 lg:flex-row lg:justify-between items-center text-center sm:text-left justify-center sm:items-start lg:items-center">
+                    <div class="flex flex-col items-center sm:items-start">
                         <img src="images/Logo-AiBuddy.svg" class="mb-5" alt="">
                         <p class="leading-normal">Empowering conversations, <br>Elevating experiences.</p>
                     </div>
-                    <div class="lg:col-span-8 my-auto">
-                        <nav class="items-center">
-                            <ul class="flex justify-end md:justify-start gap-4 py-8 font-semibold">
-                                <li><a href="#">Product</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Licenses</a></li>
-                            </ul>
-                        </nav>
+                    <div class="">
+                        <ul class="flex justify-center flex-wrap gap-4 font-semibold">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Licenses</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-12 gap-16">
-                    <div class="lg:col-span-8 py-8">
+                <div class="mt-8 flex sm:flex-row flex-col gap-8 sm:text-left text-center items-center justify-between">
+                    <div class="">
                         <p class="leading-normal">Copyright © AIBuddy | Developed by <span class="text-orangge underline">Alexis Gardin</span> | Powered by <span class="text-orangge underline">Webflow</span></p>
                     </div>
-                    <div class="lg:col-span-4 my-auto">
-                        <div class="flex gap-4 justify-end">
-                            <img src="images/661d33c74c5f947323780cb2_twitter-icon.svg" alt="">
-                            <img src="images/661d33c7014c1488279319eb_facebook-icon.svg" alt="">
-                            <img src="images/661d33c7babb916786603a6a_linkedin-icon.svg" alt="">
-                        </div>
+                    <div class="flex gap-4 justify-end">
+                        <img src="images/661d33c74c5f947323780cb2_twitter-icon.svg" alt="">
+                        <img src="images/661d33c7014c1488279319eb_facebook-icon.svg" alt="">
+                        <img src="images/661d33c7babb916786603a6a_linkedin-icon.svg" alt="">
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
