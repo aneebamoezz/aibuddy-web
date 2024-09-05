@@ -14,90 +14,52 @@
 </head>
 
 <body class="font-plus">
-    <nav>
-        <div class="container-lg mx-auto">
-            <div class="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        <!-- Mobile menu button-->
-                        <button type="button"
-                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="absolute -inset-0.5"></span>
-                            <span class="sr-only">Open main menu</span>
-                            <!--
-                        Icon when menu is closed.
-            
-                        Menu open: "hidden", Menu closed: "block"
-                      -->
-                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                            <!--
-                        Icon when menu is open.
-            
-                        Menu open: "block", Menu closed: "hidden"
-                      -->
-                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div class="flex flex-shrink-0 items-center">
-                            <img class="h-8 w-auto" src="images/Logo-AiBuddy.svg" alt="Your Company">
-                        </div>
-                        <div class="hidden sm:ml-6 sm:block">
-                            <div class="flex space-x-4">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#"
-                                    class="rounded-md  px-3 py-2  hover:text-white text-sm font-medium text-black"
-                                    aria-current="page">Product</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-bg-button hover:text-white">Testimonials</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-bg-button hover:text-white">FAQ</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-bg-button hover:text-white">Pricing</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-bg-button hover:text-white">Contact
-                                    Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button type="button"
-                            class="relative px-4 py-2 rounded-full bg-bg-button p-1 text-white font-medium
-                     hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            Try Aibuddy
-                        </button>
-                    </div>
+   <!-- Navbar -->
+   <nav class="relative container-lg">
+    <!-- Flex container -->
+    <div class="flex items-center justify-around py-6">
+        <!-- Logo -->
+        <div class="pt-2">
+            <img src="images/Logo-AiBuddy.svg" alt="" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex font-bold items-center">
+            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Testimonials</a>
+            <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Contact us</a>
+        </div>
+        <!-- Mobile Menu -->
+        <div x-data="{open: false}">
+            <template x-if="open" class="md:hidden">
+                <div
+                    class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
+                    <img class="fixed object-cover" src="images/bg-modal.jpeg" alt="">
+                </div>
+            </template>
+            <button x-on:click="open = !open" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            <div x-show="open" x-transition>
+                <div
+                    class="fixed flex flex-col rounded-lg items-center text-black self-end py-8 mt-4 space-y-6 font-bold bg-bg-button sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#">Pricing</a>
+                    <a href="#">Product</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Community</a>
                 </div>
             </div>
         </div>
-        </div>
+        <!-- Button -->
+        <a href="#"
+            class="hidden p-3 px-6 pt-2 text-white bg-bg-button rounded-full baseline hover:bg-brightRedLight md:block">Try Aibuddy</a>
+    </div>
+</nav>
 
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Product</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testimonials</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">FAQ</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pricing</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
-            </div>
-        </div>
-    </nav>
 
     <main>
         <!--Hero Section-->
