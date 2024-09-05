@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./input.css">
 </head>
 
 <body class="font-plus">
    <!-- Navbar -->
-   <nav class="relative container-lg">
+   <nav class="relative container-lg bg-red-400">
     <!-- Flex container -->
-    <div class="flex items-center justify-around py-6">
+    <div class="flex md:items-center items-start p-4 md:justify-around md:py-6 max-w-7xl">
         <!-- Logo -->
         <div class="pt-2">
             <img src="images/Logo-AiBuddy.svg" alt="" />
@@ -32,12 +33,12 @@
         </div>
         <!-- Mobile Menu -->
         <div x-data="{open: false}">
-            <template x-if="open" class="md:hidden">
+            <!-- <template x-if="open" class="md:hidden">
                 <div
                     class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
                     <img class="fixed object-cover" src="images/bg-modal.jpeg" alt="">
                 </div>
-            </template>
+            </template> -->
             <button x-on:click="open = !open" class="block hamburger md:hidden focus:outline-none">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
