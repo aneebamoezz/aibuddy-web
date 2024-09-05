@@ -38,9 +38,9 @@
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
             </button>
-            <div x-show="open">
+            <div x-show="open" class="bg-bg-button ">
                 <div
-                    class="fixed flex flex-col rounded-lg bg-bg-button items-center text-white self-end py-8 mt-4 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" x-transition>
+                    class="fixed flex flex-col rounded-lg items-center text-white self-end py-8 mt-4 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" x-transition>
                     <a href="#" class="hover:text-darkGrayishBlue">Product</a>
                     <a href="#" class="hover:text-darkGrayishBlue">Testimonials</a>
                     <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
@@ -578,15 +578,13 @@
             </div>
         </section>
         <!--Frequently asked questions-->
-        <section class="mt-20 p-5">
+        <section class="my-20 p-5">
             <div class="container mx-auto">
-                <div class="grid lg:grid-cols-12 gap-8">
+                <div class="grid lg:grid-cols-12  bg-red-200">
                     <div class="lg:col-span-4 bg-white p-8">
-                        <small class="font-medium text-xs bg-orangge p-1 text-white rounded-full">FAQs</small>
+                        <small class="font-medium text-xs bg-orangge text-white rounded-full p-2">FAQs</small>
                             <h4 class="font-bold text-4xl pb-6 mt-2">Frequently asked questions</h4>
-                            <p class="text-gray-color text-lg">Have questions? We have answers. Check out our FAQ
-                                section for quick insights into AIBuddy's features, functionality, and how it can
-                                revolutionize your conversational experiences.</p>
+                            <p class="text-gray-color md:text-lg text-base">Have questions? We have answers. Check out our FAQ section for quick insights into AIBuddy's features, functionality, and how it can revolutionize your conversational experiences.</p>
                     </div>
                     <div class="lg:col-span-8">
                         <div x-data="{ open: false }">
